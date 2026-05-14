@@ -4,10 +4,16 @@
 
 This repository provides the public-release implementation of the ESM2 and Morgan fingerprint model for KOFF prediction. The layout follows the common style of classic DTA codebases such as DeepDTA, GraphDTA, and AttentionDTA: data files are kept under `data/`, neural network definitions under `models/`, shared helpers under `utils/`, and root-level scripts run the main workflows.
 
+## Model Architecture
+
+![MGCA-KOFF model architecture](assets/MGCA-koff.png)
+
 ## Repository Layout
 
 ```text
 online/
+  assets/
+    MGCA-koff.png                # Model architecture figure
   training.py                    # Main training and evaluation entry point
   create_data.py                 # Export pkl folds to train/test CSV files
   data/

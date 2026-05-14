@@ -4,10 +4,16 @@
 
 本仓库提供 KOFF 预测模型的论文公开代码版本。模型使用 ESM2 蛋白特征和 Morgan 药物指纹。目录结构参考 DeepDTA、GraphDTA、AttentionDTA 等经典 DTA 论文代码仓库：数据放在 `data/`，神经网络定义放在 `models/`，通用工具放在 `utils/`，主要流程由根目录脚本运行。
 
+## 模型架构
+
+![MGCA-KOFF 模型架构](assets/MGCA-koff.png)
+
 ## 仓库结构
 
 ```text
 online/
+  assets/
+    MGCA-koff.png                # 模型架构图
   training.py                    # 训练和评估入口
   create_data.py                 # 将 pkl folds 导出为 train/test CSV
   data/
